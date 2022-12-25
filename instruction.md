@@ -161,6 +161,34 @@ local_branch_name – имя удаляемой ветки.
 # 14. Вспомогательные команды GIT
 
 # 15. Совместная работа с GIT
+ # `Работа с GitHub`
+
+ 1. Создать аккаунт на GITHUB.com
+ 2. Создать удалённый репозиторий
+ 3. GIT выдаст инструкцию, где вы сможете выбрать создать новый локальный репозиторий или привязать уже существующий. Неодбходимо построчно скопировать команды инструкции и вставить их в свой терминал 
+
+```
+or create a new repository on the command line
+
+echo "# instruction" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin <ссылка на удалённый репозиторий>
+git push -u origin main
+```
+
+```
+or push an existing repository from the command line
+
+git remote add origin <ссылка на удалённый репозиторий>
+git branch -M main
+git push -u origin main
+```
+
+
+
 
 
 
